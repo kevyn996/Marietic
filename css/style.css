@@ -244,6 +244,18 @@ body {
     max-width: 1060px;
     max-width: 960px;
   }
+
+  @media (max-width: 768px) {
+    .fh5co-project-item img {
+      width: 100%;  /* Asegura que la imagen ocupe el 100% del contenedor */
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .col-md-4 {
+      width: 100%;  /* Para pantallas pequeñas, usa el 100% del ancho disponible */
+    }
+  }
 }
 .boxed #fh5co-page .container {
   max-width: 800px;
@@ -665,6 +677,14 @@ body {
   margin: 0 0 10px 0;
   color: #ffc600;
 }
+
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 100%;  /* Asegura que las columnas se ajusten al 100% del ancho */
+  }
+}
+
 #fh5co-projects .fh5co-project-item .fh5co-text span {
   color: #b3b3b3;
   font-size: 16px;

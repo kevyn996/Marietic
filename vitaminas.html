@@ -13,6 +13,16 @@
 	<meta name="author" content="Marietic" />
 </head>
 
+<style>
+	#map {
+		height: 400px;
+		width: 100%;
+	}
+</style>
+
+<!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
  
   	 <!-- Facebook Open Graph -->
@@ -99,9 +109,9 @@
 			<h1 class="animate-box" id="fh5co-logo"><a href="index.html">Marietic<span></span></a></h1>
 			<ul class="pull-right right-menu">
 			  <li class="fh5co-cta-btn"><a href="https://drive.google.com/file/d/1fk_aRcjpTUdfKcH5rJ1STzr7LsSt1WCF/view"
-				 target="_blank">Catalago vitaminas</a></li>
+				 target="_blank" rel="noopener noreferrer">Catalago vitaminas</a></li>
 			  <li class="fh5co-cta-btn"><a href="https://drive.google.com/file/d/1jexJYbF02JfFYx0u8P6R5GyQfpVoiMyY/view?usp=sharing"
-				 target="_blank">Catalago corporales</a></li>
+				 target="_blank" rel="noopener noreferrer">Catalago corporales</a></li>
 			</ul>
 		  </nav>
 		</div>
@@ -174,7 +184,7 @@
 						<h2 class="fh5co-lead animate-box"> Sueroterapias</h2>
 						<p class="fh5co-sub-lead animate-box text-justify">
 				</div>
-				<div class="row">
+				
 					
 					<div id="vitamina-c" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="vitaminas.html#vitamina-c" class="fh5co-project-item ">
@@ -326,13 +336,31 @@
 				<div class="row ">
 					<div class="col-md-3 col-sm-6 col-xs-12 ">
 						<div class="fh5co-footer-widget">
-							<h3> <a href="https://maps.app.goo.gl/eRH4QHYNKJbqebDq5" target="_blank">Ubicanos</a></h3>
+							<h3> <a href="https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6" target="_blank">Ubicanos</a></h3>
 							<ul class="fh5co-links">
-								<li><a href="https://maps.app.goo.gl/eRH4QHYNKJbqebDq5" target="_blank">Av alfredo benavides 264 <p> Miraflores, Lima, Perú</p></a></li>
+								<li><a href="https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6" target="_blank">Av alfredo benavides 264 <p> Miraflores, Lima, Perú</p></a></li>
 								
 							</ul>
 						</div>
 					</div>
+				
+
+					<!-- Contenedor para el mapa -->
+					<div id="map"></div>
+				
+					<script>
+						// Crear el mapa centrado en la ubicación de Marietic (coordenadas de tu empresa)
+						var map = L.map('map').setView([-12.1245504, -77.0309146], 16); // Nuevas coordenadas de la empresa
+				
+						// Cargar los tiles de OpenStreetMap
+						L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+							attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+						}).addTo(map);
+				
+						// Añadir un marcador en la ubicación de la empresa
+						var marker = L.marker([-12.1245504, -77.0309146]).addTo(map);  // Nuevas coordenadas de la empresa
+						 marker.bindPopup("<b>Marietic</b><br><a href='https://maps.app.goo.gl/WyHfDsyRaBGDxhFM6' target='_blank' rel='noopener noreferrer' >Ver en Google Maps</a>").openPopup();
+					</script>
 
 					<div class="col-md-3 col-sm-6 col-xs-12 ">
 						<div class="fh5co-footer-widget">
@@ -344,29 +372,30 @@
 
 					<div class="col-md-3 col-sm-6 col-xs-12 ">
 						<div class="fh5co-footer-widget">
-							<h3>Síguenos</h3>
+							<br><h3>Síguenos</h3>
 							<ul class="fh5co-social">
-								<li><a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="https://www.instagram.com/marieticsalud" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="https://www.tiktok.com/@marieticsalud" target="_blank" ><i class="fab fa-tiktok"></i></a></li> <!-- Ícono de TikTok -->
+								<li><a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://www.instagram.com/marieticsalud" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.tiktok.com/@marieticsalud" target="_blank" rel="noopener noreferrer" ><i class="fab fa-tiktok"></i></a></li> <!-- Ícono de TikTok -->
 							</ul>
 						</div>
 					</div>
 					
-					<div class="whatsapp-bubble animate-box ">
-						<a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank">
-							<img src="images/facebook.png" alt="WhatsApp">
+					<div class="whatsapp-bubble animate-box">
+						<a href="https://www.facebook.com/share/1ASKZchiaf/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+						  <img src="images/facebook.png" alt="Facebook">
 						</a>
-						<a href="https://www.instagram.com/marieticsalud" target="_blank">
-							<img src="images/social.png" alt="WhatsApp">
+						<a href="https://www.instagram.com/marieticsalud" target="_blank" rel="noopener noreferrer">
+						  <img src="images/social.png" alt="Instagram">
 						</a>
-						<a href="https://www.tiktok.com/@marieticsalud" target="_blank">
-							<img src="images/tik-tok.png" alt="WhatsApp">
-
-							<a href="https://wa.me/51906631139" target="_blank">
-								<img src="images/whatsapp (1).png" alt="WhatsApp">
+						<a href="https://www.tiktok.com/@marieticsalud" target="_blank" rel="noopener noreferrer">
+						  <img src="images/tik-tok.png" alt="TikTok">
 						</a>
-					</div>
+						<a href="https://wa.me/51906631139" target="_blank" rel="noopener noreferrer">
+						  <img src="images/whatsapp (1).png" alt="WhatsApp">
+						</a>
+					  </div>
+					  
 				
 			</div>
 			<div class="fh5co-copyright ">
