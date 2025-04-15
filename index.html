@@ -1,66 +1,110 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marietic Salud & Estética</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<!-- SEO Básico -->
-	<meta name="description" content="Limpiezas faciales, drenaje linfático postoperatorio, vitaminas, reducción de medidas, micropigmentación y más en Marietic Miraflores. Atención personalizada para tu belleza y bienestar.">
-	<meta name="keywords" content="limpieza facial, drenaje linfático, vitaminas endovenosas, reducción de medidas, estética corporal, micropigmentación, Marietic, estética en Miraflores">
+<!DOCTYPE html> 
+<html lang="es"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--> 
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Marietic Salud & Estética</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<!-- SEO Básico --> 
+	<meta name="description" content="Limpiezas faciales, drenaje linfático postoperatorio, vitaminas, reducción de medidas, micropigmentación y más en Marietic Miraflores. Atención personalizada para tu belleza y bienestar."> 
+	<meta name="keywords" content="limpieza facial, drenaje linfático, vitaminas endovenosas, reducción de medidas, estética corporal, micropigmentación, Marietic, estética en Miraflores"> 
 	<meta name="author" content="Marietic">
+    
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://marietic.com/" />
 
     <!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	
+	<!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 	
- <!-- Facebook Open Graph -->
-<meta property="og:title" content="Marietic Salud & Estética" />
-<meta property="og:description" content="Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más." />
-<meta property="og:image" content="https://marietic.com/images/espacio.jpg" />
-<meta property="og:url" content="https://marietic.com" />
-<meta property="og:site_name" content="Marietic" />
+    <!-- Facebook Open Graph --> 
+    <meta property="og:title" content="Marietic Salud & Estética" /> 
+    <meta property="og:description" content="Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más." /> 
+    <meta property="og:image" content="https://marietic.com/images/logo-marietic.svg" /> 
+    <meta property="og:image:width" content="500" /> 
+    <meta property="og:image:height" content="500" /> 
+    <meta property="og:url" content="https://marietic.com" /> 
+    <meta property="og:site_name" content="Marietic" />
 
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Marietic Salud & Estética" />
-<meta name="twitter:description" content="Especialistas en salud y belleza en Miraflores. Agenda tu cita hoy." />
-<meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
+    <!-- Twitter Cards --> 
+    <meta name="twitter:title" content="Marietic Salud & Estética" /> 
+    <meta name="twitter:description" content="Especialistas en salud y belleza en Miraflores. Agenda tu cita hoy." /> 
+    <meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- Schema.org para el logo y datos de la organización -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Marietic Salud & Estética",
+      "url": "https://marietic.com",
+      "logo": "https://marietic.com/images/logo-marietic.png",
+      "image": "https://marietic.com/images/espacio.jpg",
+      "description": "Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Alfredo Benavides 264",
+        "addressLocality": "Miraflores",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -12.1245504,
+        "longitude": -77.0309146
+      },
+      "telephone": "+51906631139",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.facebook.com/share/1ASKZchiaf",
+        "https://www.instagram.com/marieticsalud",
+        "https://www.tiktok.com/@marieticsalud"
+      ]
+    }
+    </script>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
 	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+	<link rel="manifest" href="/site.webmanifest"> 
+	 
+	<!-- Animate.css --> 
+	<link rel="stylesheet" href="css/animate.css"> 
+	<!-- Flexslider --> 
+	<link rel="stylesheet" href="css/flexslider.css"> 
+	<!-- Icomoon Icon Fonts--> 
+	<link rel="stylesheet" href="css/icomoon.css"> 
+	<!-- Magnific Popup --> 
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	<!-- Bootstrap  --> 
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<link rel="stylesheet" href="css/style.css">
 
-
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
 	
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	</head>
-	
+
+</head>
 	<body>
 	
 	<!-- Loader -->
@@ -456,9 +500,10 @@
 		{
 		  "@context": "https://schema.org",
 		  "@type": "Organization",
-		  "name": "Marietic",
+		  "name": "Marietic Salud & Estética",
 		  "url": "https://www.marietic.com",
-		  "logo": "https://www.marietic.com/images/logo.jpg",
+		  "logo": "https://www.marietic.com/images/logo-marietic.svg",
+		  "image": "https://www.marietic.com/images/logo-marietic.svg",
 		  "sameAs": [
 			"https://www.facebook.com/share/1ASKZchiaf",
 			"https://www.instagram.com/marieticsalud",
