@@ -8,6 +8,27 @@
   flex-direction: column;
   gap: 10px; /* Espacio entre las burbujas */
 }
+.fh5co-text h5 {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.fh5co-text h5:hover {
+  background-color: #1ebe5b;
+}
+
+ 
+  
+
 #map {
   height: 250px;
   width: 100%;
@@ -84,6 +105,25 @@ h1, h2, h3, h4, h5, h6 {
 .titulo-centrado{
   color: #18b913;
 }
+.btn-wsp {
+  display: inline-block;
+  background-color: #1e23bed4;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+}
+
+.btn-wsp:hover {
+  background-color: #9d0f0f8c;
+  text-decoration: none;
+  color: white;
+}
+
 
 .btn {
   margin-right: 4px;
