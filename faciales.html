@@ -8,48 +8,86 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marietic Salud & Estética</title>
+	<title>Marietic Salud & Estética - Tratamientos Faciales</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- SEO -->
+	<!-- SEO Básico -->
 	<meta name="description" content="Limpiezas faciales, plasma rico en plaquetas, dermapen, hidratación profunda y más para una piel radiante. Cuida tu rostro con Marietic en Miraflores.">
 	<meta name="keywords" content="limpieza facial, plasma rico en plaquetas, dermapen, hidratación facial, estética facial, cuidados de la piel, Marietic, estética en Miraflores">
 	<meta name="author" content="Marietic">
+    
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://marietic.com/faciales.html" />
 
-	<style>
-        #map {
-            height: 250px;
-            width: 100%;
-			
-        }
-    </style>
+    <!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
 
     <!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	
- 
-  	<!-- Facebook Open Graph -->
-<meta property="og:title" content="Marietic Salud & Estética" />
-<meta property="og:description" content="Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más." />
-<meta property="og:image" content="https://marietic.com/images/espacio.jpg" />
-<meta property="og:url" content="https://marietic.com" />
-<meta property="og:site_name" content="Marietic" />
+    <!-- Facebook Open Graph --> 
+    <meta property="og:title" content="Marietic Tratamientos Faciales" /> 
+    <meta property="og:description" content="Limpiezas faciales, plasma rico en plaquetas, dermapen, hidratación profunda y más para una piel radiante. Cuida tu rostro con Marietic en Miraflores." /> 
+    <meta property="og:image" content="https://marietic.com/images/logo-marietic.svg" /> 
+    <meta property="og:image:width" content="500" /> 
+    <meta property="og:image:height" content="500" /> 
+    <meta property="og:url" content="https://marietic.com/faciales.html" /> 
+    <meta property="og:site_name" content="Marietic" />
 
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Marietic Salud & Estética" />
-<meta name="twitter:description" content="Especialistas en salud y belleza en Miraflores. Agenda tu cita hoy." />
-<meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
+    <!-- Twitter Cards --> 
+    <meta name="twitter:title" content="Marietic Salud & Estética - Tratamientos Faciales" /> 
+    <meta name="twitter:description" content="Limpiezas faciales, plasma rico en plaquetas, dermapen y más para una piel radiante en Miraflores." /> 
+    <meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- Schema.org para el logo y datos de la organización -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Marietic Salud & Estética",
+      "url": "https://marietic.com",
+      "logo": "https://marietic.com/images/logo-marietic.svg",
+      "image": "https://marietic.com/images/espacio.jpg",
+      "description": "Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Alfredo Benavides 264",
+        "addressLocality": "Miraflores",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -12.1245504,
+        "longitude": -77.0309146
+      },
+      "telephone": "+51906631139",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.facebook.com/share/1ASKZchiaf",
+        "https://www.instagram.com/marieticsalud",
+        "https://www.tiktok.com/@marieticsalud"
+      ]
+    }
+    </script>
 
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
 	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+	<link rel="manifest" href="/site.webmanifest">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -64,13 +102,8 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<!-- Styleswitcher -->
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<!-- End demo purposes only -->
-
-	</style>
-	<!-- End demo purposes only -->
-
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -79,8 +112,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-
+</head>
 
 	<!-- 
 		INFO:
@@ -181,7 +213,7 @@
 									<!-- Limpieza facial con Dermapen y prp -->
 									<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 									  <div class="fh5co-project-item">
-										<img src="images/limpiezafacial con prp.png" alt="Limpieza facial con Dermapen y prp" class="img-responsive">
+										<img src="images/limpiezafacial con prp.png" alt="Limpieza facial con Dermapen y plasma rico en plaquetas" class="img-responsive">
 										<div class="fh5co-text">
 										  <h2 class="text-center">Limpieza facial con Dermapen y prp</h2>
 										  <p>
@@ -357,7 +389,7 @@
 									<!-- PRP facial con vitamina C -->
 									<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 									  <div class="fh5co-project-item">
-										<img src="images/PLASMA RICO EN PLAQUETAS FACIALcon vitamina c.png" alt="PRP facial con vitamina C" class="img-responsive">
+										<img src="images/PLASMA RICO EN PLAQUETAS FACIALcon vitamina c.png" alt="plasma rico en plaquetas facial con vitamina C" class="img-responsive">
 										<div class="fh5co-text">
 										  <h2 class="text-center">PRP facial con vitamina C</h2>
 										  <p>
@@ -378,7 +410,7 @@
 									<!-- PRP cuello, escote y manos -->
 									<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 									  <div class="fh5co-project-item">
-										<img src="images/1212.png" alt="PRP cuello, escote y manos" class="img-responsive">
+										<img src="images/1212.png" alt="plasma rico en plaquetas cuello, escote y manos" class="img-responsive">
 										<div class="fh5co-text">
 										  <h2 class="text-center">PRP cuello, escote y manos</h2>
 										  <p>
