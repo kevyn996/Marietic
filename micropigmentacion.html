@@ -1,69 +1,111 @@
 
-<!DOCTYPE html>
-<html lang="es">
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marietic Salud & Estética</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<!-- SEO -->
-	<meta name="description" content="Micropigmentación profesional de cejas, labios y ojos en Marietic. Realza tu belleza con resultados naturales y personalizados en Miraflores.">
-	<meta name="keywords" content="micropigmentación, cejas, labios, ojos, maquillaje semipermanente, estética facial, Marietic Miraflores">
+<!DOCTYPE html> 
+<html lang="es"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--> 
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--> 
+<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Micropigmentación | Marietic Salud & Estética</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	
+	<!-- SEO Básico --> 
+	<meta name="description" content="Micropigmentación profesional de cejas, labios y ojos en Marietic. Realza tu belleza con resultados naturales y personalizados en Miraflores."> 
+	<meta name="keywords" content="micropigmentación, cejas, labios, ojos, maquillaje semipermanente, estética facial, Marietic Miraflores"> 
 	<meta name="author" content="Marietic">
-
-	<!-- URL Canónica -->
+    
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- URL Canónica -->
     <link rel="canonical" href="https://marietic.com/micropigmentacion.html" />
 
     <!-- Cargar el archivo de Leaflet (librería para OpenStreetMap) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	
- 
-  <!-- Facebook Open Graph -->
-<meta property="og:title" content="Marietic Salud & Estética" />
-<meta property="og:description" content="Tratamientos estéticos personalizados en Miraflores: limpieza facial, plasma, vitaminas, reducción corporal y más." />
-<meta property="og:image" content="https://marietic.com/images/espacio.jpg" />
-<meta property="og:url" content="https://marietic.com" />
-<meta property="og:site_name" content="Marietic" />
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Marietic Salud & Estética" />
-<meta name="twitter:description" content="Especialistas en salud y belleza en Miraflores. Agenda tu cita hoy." />
-<meta name="twitter:image" content="https://marietic.com/images/espacio.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+	<!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
+    <!-- Facebook Open Graph --> 
+    <meta property="og:title" content="Micropigmentación | Marietic Salud & Estética" /> 
+    <meta property="og:description" content="Micropigmentación profesional de cejas y labios en Marietic. Realza tu belleza con resultados naturales y personalizados." /> 
+    <meta property="og:image" content="https://marietic.com/images/micropigmentacion.jpg" /> 
+    <meta property="og:image:width" content="500" /> 
+    <meta property="og:image:height" content="500" /> 
+    <meta property="og:url" content="https://marietic.com/micropigmentacion.html" /> 
+    <meta property="og:site_name" content="Marietic" />
+
+    <!-- Twitter Cards --> 
+    <meta name="twitter:title" content="Micropigmentación | Marietic Salud & Estética" /> 
+    <meta name="twitter:description" content="Micropigmentación profesional de cejas y labios en Miraflores. Agenda tu cita hoy." /> 
+    <meta name="twitter:image" content="https://marietic.com/images/micropigmentacion.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Schema.org para el servicio específico -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Micropigmentación",
+      "procedureType": "https://schema.org/CosmeticProcedure",
+      "description": "Micropigmentación profesional de cejas y labios en Marietic. Realza tu belleza con resultados naturales y personalizados.",
+      "image": "https://marietic.com/images/micropigmentacion.jpg",
+      "bodyLocation": ["cejas", "labios", "ojos"],
+      "howPerformed": "Utilizamos técnicas avanzadas y pigmentos de alta calidad para resultados naturales y duraderos.",
+      "performer": {
+        "@type": "MedicalBusiness",
+        "name": "Marietic Salud & Estética",
+        "url": "https://marietic.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Alfredo Benavides 264",
+          "addressLocality": "Miraflores",
+          "addressRegion": "Lima",
+          "addressCountry": "PE"
+        },
+        "telephone": "+51906631139"
+      }
+    }
+    </script>
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> 
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> 
+	<link rel="manifest" href="/site.webmanifest"> 
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+	 
+	<!-- Animate.css --> 
+	<link rel="stylesheet" href="css/animate.css"> 
+	<!-- Flexslider --> 
+	<link rel="stylesheet" href="css/flexslider.css"> 
+	<!-- Icomoon Icon Fonts--> 
+	<link rel="stylesheet" href="css/icomoon.css"> 
+	<!-- Magnific Popup --> 
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	<!-- Bootstrap  --> 
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<link rel="stylesheet" href="css/style.css">
 
-
 	<link rel="stylesheet" id="theme-switch" href="css/style.css">
 	
+	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
 	<body>
 	
 	<!-- Loader -->
@@ -80,6 +122,7 @@
 					  Nuestros Tratamientos <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" role="menu">
+						<li><a href="drenajelinfatito.html">Masajes-Post-operatorios</a></li>
 					  <li><a href="vitaminas.html">Vitaminas</a></li>
 					  <li><a href="corporales.html">Corporales</a></li>
 					  <li><a href="faciales.html">Faciales</a></li>
@@ -89,7 +132,7 @@
 				</ul>
 			</ul>
 			<h1 class="animate-box" id="fh5co-logo">
-				<a href="index.html">Marietic<span></span></a>
+				<a href="index.html">Microblading y Microshading<span></span></a>
 			  </h1>
 			  <ul class="pull-right right-menu">
 				<li class="fh5co-cta-btn">
@@ -115,7 +158,7 @@
 							<div class="fh5co-right-position">
 						-->
 						<div class=" fh5co-center-position  ">
-							<h2 class="animate-box colmb-6">Microblading, Microshading & Micropigmentación</h2>
+							<h2 class="animate-box colmb-6">Labios definidos y cejas perfectas, todos los días.</h2>
 							<p class="animate-box" m> <a href="https://wa.me/51906631139" target="_blank" class="btn btn-primary">¡Agenda tu cita ahora!</a></p>
 						</div>
 					</div>
