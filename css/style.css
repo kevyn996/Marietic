@@ -319,11 +319,12 @@ body {
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
-    padding-top: 30px;
+    padding-top: 15px;
   }
   @media screen and (max-width: 1200px) {
     #fh5co-header nav ul {
       display: none;
+      
     }
   
     .fh5co-nav-toggle {
@@ -354,7 +355,7 @@ body {
   
 }
 #fh5co-header nav ul {
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   z-index: 2;
   background-color: transparent;
@@ -371,9 +372,9 @@ body {
   position: absolute; /* Posición absoluta respecto al contenedor padre */
   top: 100%; /* Despliega justo debajo del elemento padre */
   left: 0; /* Alineado a la izquierda del padre */
-  background-color: rgba(0, 0, 0, 0); /* Fondo oscuro semi-transparente */
+  background-color: rgba(7, 7, 7, 0); /* Fondo oscuro semi-transparente */
   border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Sombra ligera */
+  box-shadow: 0 2px 5px rgba(246, 244, 244, 0); /* Sombra ligera */
   border-radius: 40px; /* Bordes redondeados */
   padding: 15px -15px;
   min-width: 150px; /* Ancho mínimo del dropdown */
@@ -388,7 +389,12 @@ body {
 
 
 
-
+@media screen and (max-width: 480px) {
+  #fh5co-hero {
+    height: 450px;
+    
+  }
+}
 
 
 
@@ -404,7 +410,7 @@ body {
 
   
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 850px) {
   #fh5co-header nav ul {
     display: none; /* Oculta el menú */
   }
@@ -423,21 +429,21 @@ body {
   
 }
 #fh5co-header nav ul li a {
-  font-size: 16px;
-  color: rgb(2, 2, 2);
+  font-size: 14px;
+  color: rgb(255, 255, 255);
   font-weight: 400;
   
 }
 #fh5co-header nav ul li a:hover {
   color: rgb(0, 0, 0);
-  background-color: #e6e0e0;
+  background-color: #e6e0e000;
 
 }
 #fh5co-header nav ul li.fh5co-cta-btn a {
   position: relative;
   border-bottom: none;
   padding: 5px 5px;
-  border: 2px solid rgb(9, 9, 9);
+  border: 2px solid rgb(207, 206, 206);
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -458,12 +464,7 @@ body {
   background-position: center;
   
 }
-@media screen and (max-width: 480px) {
-  #fh5co-hero {
-    height: 450px;
-    
-  }
-}
+
 #fh5co-hero .fh5co-overlay {
   position: absolute;
   top: 0;
@@ -1605,3 +1606,10 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 768px) {
+  .dropdown-menu {
+    display: none !important;
+  }
+}
+ 
+
