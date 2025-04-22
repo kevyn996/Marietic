@@ -1706,45 +1706,4 @@ body {
             height: auto;
         }
   
-        @media only screen and (max-width: 767px) {
-          #fh5co-hero {
-            background-image: url(images/espacio.jpg) !important;
-            background-size: cover !important;
-            background-position: center center !important;
-            background-attachment: scroll !important; /* This is important for mobile */
-          }
-          
-          /* Fix for centering on iPhone */
-          .fh5co-center-position {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            justify-content: center !important;
-            text-align: center !important;
-            width: 100% !important;
-          }
-          
-          .fh5co-center-position h2 {
-            text-align: center !important;
-            width: 100% !important;
-          }
-          
-          .animated-bounce-in {
-            text-align: center !important;
-            margin: 0 auto !important;
-            width: 100% !important;
-          }
-        }
-        
-        /* Additional fix for iOS specifically */
-        @supports (-webkit-touch-callout: none) {
-          /* iOS specific styles */
-          .fh5co-center-position {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            justify-content: center !important;
-            text-align: center !important;
-            width: 100% !important;
-          }
-        }
+   
