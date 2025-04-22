@@ -767,7 +767,7 @@ body {
   text-decoration: none;
 }
 #fh5co-projects .fh5co-project-item:hover img, #fh5co-projects .fh5co-project-item:focus img {
-  opacity: .6;
+  opacity: .7;
 }
 #fh5co-projects .fh5co-project-item:hover h2, #fh5co-projects .fh5co-project-item:hover span, #fh5co-projects .fh5co-project-item:focus h2, #fh5co-projects .fh5co-project-item:focus span {
   text-decoration: none !important;
@@ -1667,19 +1667,19 @@ body {
             width: 100%;
             height: auto;
             object-fit: cover;
-            aspect-ratio: 16/9;
+            aspect-ratio: 4/3.5;
             border-radius: 8px 8px 0 0;
         }
         .fh5co-text {
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #fafafa;
             border-radius: 0 0 8px 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             min-height: 350px;
         }
         .btn-wsp {
             display: inline-block;
-            padding: 8px 16px;
+            padding: 8px 16}px;
             background-color: #25D366;
             color: white;
             text-decoration: none;
@@ -1706,3 +1706,45 @@ body {
             height: auto;
         }
   
+        @media only screen and (max-width: 767px) {
+          #fh5co-hero {
+            background-image: url(images/espacio.jpg) !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            background-attachment: scroll !important; /* This is important for mobile */
+          }
+          
+          /* Fix for centering on iPhone */
+          .fh5co-center-position {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            width: 100% !important;
+          }
+          
+          .fh5co-center-position h2 {
+            text-align: center !important;
+            width: 100% !important;
+          }
+          
+          .animated-bounce-in {
+            text-align: center !important;
+            margin: 0 auto !important;
+            width: 100% !important;
+          }
+        }
+        
+        /* Additional fix for iOS specifically */
+        @supports (-webkit-touch-callout: none) {
+          /* iOS specific styles */
+          .fh5co-center-position {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            width: 100% !important;
+          }
+        }
