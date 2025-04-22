@@ -75,16 +75,16 @@
 			});
 		}
 		
-		// Arreglo para centrado en iOS
-		if (isiPhone() || isiPad()) {
-			$('.fh5co-center-position').css({
-				'display': 'flex',
-				'flex-direction': 'column',
-				'align-items': 'center',
-				'justify-content': 'center',
-				'text-align': 'center',
-				'width': '100%'
-			});
+		// // Arreglo para centrado en iOS
+		// if (isiPhone() || isiPad()) {
+		// 	$('.fh5co-center-position').css({
+		// 		'display': 'flex',
+		// 		'flex-direction': 'column',
+		// 		'align-items': 'center',
+		// 		'justify-content': 'center',
+		// 		'text-align': 'center',
+		// 		'width': '100%'
+		// 	});
 			
 			$('.fh5co-center-position h2, .animated-bounce-in').css({
 				'text-align': 'center',
