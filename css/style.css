@@ -1826,27 +1826,52 @@ body {
     <!--Waves end-->
   </div>
 </section>
-<!-- FIN Sección de ondas CSS para footer --> */
-5. Corrección específica para Safari/iOS */
-@media not all and (min-resolution:.001dpcm) { 
-  @supports (-webkit-appearance:none) {
-    .header-waves {
-      width: 100% !important;
-      left: 0 !important;
-    }
-    
-    .waves {
-      transform: translateX(0) !important;
-      width: 100% !important;
-    }
-  }
+css
+/* Ajuste específico para posicionamiento de ondas en iOS */
+#fh5co-waves {
+  position: relative;
+  z-index: 10;
+  margin-top: -215px; /* Valor predeterminado para PC/Android */
+  width: 100%;
+  overflow: hidden;
 }
-Ajustes para dispositivos iOS */
+
+/* Media query específica para iOS */
 @supports (-webkit-touch-callout: none) {
-  .waves {
-    /* Corrección específica para iOS */
-    width: 100% !important;
-    left: 0 !important;
-    transform: translateX(0) !important;
+  #fh5co-waves {
+    margin-top: -125px !important; /* Ajuste para iOS - más abajo */
+    bottom: 0;
+    position: absolute; /* Cambiamos a posición absoluta en iOS */
+    left: 0;
+    right: 0;
   }
   
+  /* Forzar posición correcta en iOS */
+  .header-waves {
+    position: relative;
+    bottom: 0;
+    width: 100% !important;
+    left: 0 !important;
+  }
+  
+  /* Garantizar posición correcta de las ondas SVG */
+  .waves {
+    transform: none !important;
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/* Específicamente para iPhone */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  #fh5co-waves {
+    margin-top: -180px !important; /* Ajuste específico para iPhone */
+    bottom: 0 !important;
+    position: absolute !important;
+  }
+}
