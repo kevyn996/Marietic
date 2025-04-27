@@ -8,7 +8,7 @@
 	<meta charset="utf-8"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<title>Marietic Salud & Estética</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- SEO Básico --> 
 	<meta name="description" content="Limpiezas faciales, drenaje linfático postoperatorio, vitaminas, reducción de medidas, micropigmentación y más en Marietic Miraflores. Atención personalizada para tu belleza y bienestar."> 
 	<meta name="keywords" content="limpieza facial, drenaje linfático, vitaminas endovenosas, reducción de medidas, estética corporal, micropigmentación, Marietic, estética en Miraflores"> 
@@ -572,22 +572,23 @@
 		});
 	  </script>
 <script>
-	<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Esta función calcula la altura real del viewport en iOS
-    function setVH() {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-    
-    // Ejecutar la función al cargar la página
-    setVH();
-    
-    // También ejecutarla cuando cambie el tamaño o la orientación
-    window.addEventListener('resize', setVH);
-    window.addEventListener('orientationchange', setVH);
-  });
-</script>
+	// Primero configuramos la altura del viewport para dispositivos móviles
+	function setVh() {
+	  let vh = window.innerHeight * 0.01;
+	  document.documentElement.style.setProperty('--vh', `${vh}px`);
+	}
+	// Lo ejecutamos al cargar y al redimensionar
+	window.addEventListener('load', setVh);
+	window.addEventListener('resize', setVh);
+  </script>
+  if (isLowEndDevice || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+	const wavesContainer = document.querySelector('.parallax');
+	// Simplificar para iOS
+	if (wavesContainer) {
+	  // Código existente
+	}
+  }
+	
   
 	</body>
 </html>
