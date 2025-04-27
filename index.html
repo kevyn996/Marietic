@@ -8,7 +8,7 @@
 	<meta charset="utf-8"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<title>Marietic Salud & Estética</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
 	<!-- SEO Básico --> 
 	<meta name="description" content="Limpiezas faciales, drenaje linfático postoperatorio, vitaminas, reducción de medidas, micropigmentación y más en Marietic Miraflores. Atención personalizada para tu belleza y bienestar."> 
 	<meta name="keywords" content="limpieza facial, drenaje linfático, vitaminas endovenosas, reducción de medidas, estética corporal, micropigmentación, Marietic, estética en Miraflores"> 
@@ -149,50 +149,55 @@
 	  </section>
 
 	  <section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/espacio.jpg);" data-next="yes">
-		<!-- Overlay (mantener igual) -->
+		
 		<div class="fh5co-overlay"></div>
-		
-		<!-- Contenedor principal (mantener igual) -->
 		<div class="container">
-		  <div class="fh5co-intro js-fullheight">
-			<div class="fh5co-intro-text">
-			  <div class="fh5co-center-position">
-				<h2 class="mb-6">Tu bienestar es nuestra prioridad</h2>
-				<p class="animated-bounce-in"> 
-				  <a href="https://wa.me/51906631139" target="_blank" class="btn btn-primary">¡Agenda tu cita ahora!</a>
-				</p>
-			  </div>
+			<div class="fh5co-intro js-fullheight">
+				<div class="fh5co-intro-text">
+					
+						<!-- 
+							INFO:
+							Change the class to 'fh5co-right-position' or 'fh5co-center-position' to change the layout position
+							Example:
+							<div class="fh5co-right-position">
+						-->
+						<div class="fh5co-center-position margin-bottom-2">
+							<h2 class="mb-6">Tu bienestar es nuestra prioridad</h2>
+							<p class="animated-bounce-in" m> <a href="https://wa.me/51906631139" target="_blank" class="btn btn-primary">¡Agenda tu cita ahora!</a></p>
+						</div>
+					</div>
+				</div>
 			</div>
-		  </div>
-		</div>
-		
-		<!-- Sección de ondas (mover dentro del hero) -->
-		<section id="fh5co-waves">
-		  <div class="header-waves">
-			<!-- Mantener el SVG igual -->
-			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-			  <defs>
-				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-			  </defs>
-			  <g class="parallax">
-				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(5, 7, 133, 0.835)" />
-				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(84, 153, 199,0.5)" />
-				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(169, 204, 227,0.3)" />
-				<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255, 255, 255, 0.1)" />
-			  </g>
-			</svg>
-		  </div>
+			
+        <!-- INICIO Sección de ondas CSS -->
+        <section id="fh5co-waves">
+          <div class="header-waves">
+            <!--Waves Container-->
+            <div>
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(5, 7, 133, 0.835)" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(84, 153, 199,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(169, 204, 227,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255, 255, 255, 0.1)" />
+                </g>
+              </svg>
+            </div>
+            <!--Waves end-->
+          </div>
+        </section>
+        <!-- FIN Sección de ondas CSS -->
+			<div class="fh5co-learn-more ">
+				<a href="#" class="scroll-btn">
+					<span class="text">Nuestros tratamientos</span>
+					<span class="arrow"><i class="icon-chevron-down"></i></span>
+				</a>
+			</div>
 		</section>
-		
-		<!-- Botón "Nuestros tratamientos" (mantener igual) -->  
-		<div class="fh5co-learn-more">
-		  <a href="#" class="scroll-btn">
-			<span class="text">Nuestros tratamientos</span>
-			<span class="arrow"><i class="icon-chevron-down"></i></span>
-		  </a>
-		</div>
-	  </section>
         <!-- END #fh5co-hero -->
 
 
@@ -571,24 +576,6 @@
 		  }
 		});
 	  </script>
-<script>
-	// Primero configuramos la altura del viewport para dispositivos móviles
-	function setVh() {
-	  let vh = window.innerHeight * 0.01;
-	  document.documentElement.style.setProperty('--vh', `${vh}px`);
-	}
-	// Lo ejecutamos al cargar y al redimensionar
-	window.addEventListener('load', setVh);
-	window.addEventListener('resize', setVh);
-  </script>
-  if (isLowEndDevice || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-	const wavesContainer = document.querySelector('.parallax');
-	// Simplificar para iOS
-	if (wavesContainer) {
-	  // Código existente
-	}
-  }
-	
-  
+
 	</body>
 </html>
