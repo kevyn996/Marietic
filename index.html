@@ -576,6 +576,15 @@
 		  }
 		});
 	  </script>
-
+<script>
+	// Ajuste de altura para dispositivos móviles (iPhone, iPad)
+	function setVH() {
+	  let vh = window.innerHeight * 0.01;
+	  document.documentElement.style.setProperty('--vh', `${vh}px`);
+	}
+	window.addEventListener('resize', setVH);
+	setVH();
+  </script>
+  
 	</body>
 </html>
