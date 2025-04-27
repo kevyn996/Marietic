@@ -485,12 +485,17 @@ body {
   
 }
 #fh5co-hero .fh5co-intro {
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  z-index: 10;
+  height: 100%;
   position: relative;
-  
+  z-index: 10;
+  text-align: center;
 }
+
 @media screen and (max-width: 480px) {
   #fh5co-hero .fh5co-intro {
     height: 450px;
@@ -1826,4 +1831,4 @@ body {
     <!--Waves end-->
   </div>
 </section>
-css
+<!-- FIN Sección de ondas CSS para footer --> */
