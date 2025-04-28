@@ -1807,23 +1807,26 @@ body {
 }
 
 
-/* Ajuste específico para iOS */
-@supports (-webkit-touch-callout: none) {
-  .fh5co-center-position {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+/* Centrado para el primer h2 y botón en iOS y todos */
+.fh5co-center-position {
+  text-align: center;
+}
 
-  .fh5co-center-position h2 {
-    text-align: center;
-    width: 100%;
-  }
+.fh5co-center-position h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 40px;
+}
 
-  .fh5co-center-position p {
-    text-align: center;
-    width: 100%;
-  }
+.fh5co-center-position p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fh5co-center-position p a.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
 }
