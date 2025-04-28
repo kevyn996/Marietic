@@ -1820,3 +1820,24 @@ body {
     }
   }
 } /* ← Aquí cierras también el @media */
+
+/* Ajuste específico para iOS */
+@supports (-webkit-touch-callout: none) {
+  .fh5co-center-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fh5co-center-position h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .fh5co-center-position p {
+    text-align: center;
+    width: 100%;
+  }
+}
