@@ -1777,7 +1777,7 @@ body {
 /* Responsivo para móviles */
 @media (max-width: 768px) {
   #fh5co-waves {
-      margin-top: -100px; /* Ajustado para móviles */
+      margin-top: 50px; /* Ajustado para móviles */
   }
   
   .waves {
@@ -1806,29 +1806,3 @@ body {
   animation: move-forever 30s cubic-bezier(.55, .5, .45, .5) infinite;
 }
 
-/* Centrar h2 y botón correctamente en todos los dispositivos */
-.fh5co-center-position {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%; /* MUY importante para centrar bien */
-}
-
-.fh5co-center-position h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: white;
-}
-
-.fh5co-center-position p {
-  margin: 0;
-  text-align: center;
-}
-
-.fh5co-center-position p a.btn {
-  display: inline-block;
-  text-align: center;
-}
