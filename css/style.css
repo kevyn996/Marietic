@@ -1805,29 +1805,8 @@ body {
 .parallax > use {
   animation: move-forever 30s cubic-bezier(.55, .5, .45, .5) infinite;
 }
-/* <!-- INICIO Sección de ondas CSS para footer -->
-<section id="fh5co-waves-footer">
-  <div class="header-waves">
-    <!--Waves Container-->
-    <div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave-footer" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave-footer" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-          <use xlink:href="#gentle-wave-footer" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-          <use xlink:href="#gentle-wave-footer" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-          <use xlink:href="#gentle-wave-footer" x="48" y="7" fill="#fff" />
-        </g>
-      </svg>
-    </div>
-    <!--Waves end-->
-  </div>
-</section>
-<!-- FIN Sección de ondas CSS para footer --> */
-5. Corrección específica para Safari/iOS */
+
+/* Corrección específica para Safari/iOS */
 @media not all and (min-resolution:.001dpcm) { 
   @supports (-webkit-appearance:none) {
     .header-waves {
@@ -1840,4 +1819,4 @@ body {
       width: 100% !important;
     }
   }
-}
+} /* ← Aquí cierras también el @media */
