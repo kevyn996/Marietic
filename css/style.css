@@ -1718,7 +1718,7 @@ body {
 #fh5co-waves {
   position: relative;
   z-index: 10;
-  margin-top: 0px;
+  margin-top: -215px;
   pointer-events: none;
 }
 /* ... resto del código CSS ... */
