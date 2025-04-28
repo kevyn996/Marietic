@@ -1718,7 +1718,7 @@ body {
 #fh5co-waves {
   position: relative;
   z-index: 10;
-  margin-top: -215px;
+  margin-top: 0px;
   pointer-events: none;
 }
 /* ... resto del código CSS ... */
@@ -1777,7 +1777,7 @@ body {
 /* Responsivo para móviles */
 @media (max-width: 768px) {
   #fh5co-waves {
-      margin-top: 50px; /* Ajustado para móviles */
+      margin-top: -100px; /* Ajustado para móviles */
   }
   
   .waves {
